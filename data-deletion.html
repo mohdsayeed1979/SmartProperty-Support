@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Deletion Request — SmartProperty</title>
+  <meta name="description" content="Data deletion instructions for Smart Property-Management App. Learn how to clear your local database, remove individual records, or request account assistance.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="SmartProperty Home">
+        <img src="assets/logo.png" alt="SmartProperty App Logo" class="brand-logo">
+        <span>SmartProperty</span>
+        <span class="brand-tag">App</span>
+      </a>
+
+      <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="privacy-policy.html" class="nav-link">Privacy Policy</a></li>
+          <li><a href="support.html" class="nav-link">Support & FAQ</a></li>
+          <li><a href="data-deletion.html" class="nav-link active">Data Deletion</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <header class="article-header">
+      <h1 class="article-title">Data Deletion & Privacy Requests</h1>
+      <p class="article-meta">
+        Clear guidance on removing your personal and property management data from SmartProperty.
+      </p>
+    </header>
+
+    <article class="article-body">
+      
+      <h2>1. Understanding Data Ownership & Local Storage</h2>
+      <p>
+        <strong>Smart Property-Management App operates on a 100% local, on-device data architecture.</strong>
+      </p>
+      <p>
+        Because all user account credentials, property entries, tenant profiles, financial records, uploaded document attachments, and application settings are stored locally inside an isolated SQLite database on your physical mobile device, <strong>we do not maintain a copy of your records on external cloud servers</strong>.
+      </p>
+
+      <div class="alert alert-info">
+        <div class="alert-title">ℹ️ Direct User Control</div>
+        You have complete physical control over your data. You can delete individual records inside the app or remove 100% of your data instantly by clearing the app's local storage or uninstalling the app.
+      </div>
+
+      <h2>2. How to Delete Data On Your Device</h2>
+      
+      <h3>Option A: Delete Specific Records In-App</h3>
+      <p>
+        You can selectively delete any record at any time inside the app:
+      </p>
+      <ul>
+        <li><strong>Delete a Property / Unit:</strong> Open the property details card, tap <strong>Edit</strong> or the delete icon, and confirm deletion. This also removes all associated units.</li>
+        <li><strong>Delete a Tenant:</strong> Navigate to the tenant profile, tap <strong>Delete Tenant</strong>, and confirm.</li>
+        <li><strong>Delete Payments or Expenses:</strong> Open the target payment or expense ledger item and select <strong>Delete</strong>.</li>
+        <li><strong>Delete Documents:</strong> Open Document Management in Settings, select the target file, and tap <strong>Delete</strong>.</li>
+      </ul>
+
+      <h3>Option B: Complete App Data Wipe (100% Instant Removal)</h3>
+      <p>
+        To permanently erase all local account records, databases, settings, and attached images:
+      </p>
+      <ul>
+        <li><strong>On iOS (iPhone / iPad):</strong> Touch and hold the SmartProperty app icon on your Home Screen → Tap <strong>Remove App</strong> → Select <strong>Delete App</strong>. This completely wipes all local database files (<code>smart_property.db</code>) and sandbox storage.</li>
+        <li><strong>On Android:</strong> Go to <strong>Settings → Apps → SmartProperty → Storage & Cache</strong> → Tap <strong>Clear Storage / Clear Data</strong>, or uninstall the app from your Home Screen.</li>
+      </ul>
+
+      <h2>3. Manual Privacy & Data Deletion Requests</h2>
+      <p>
+        Because SmartProperty does not upload or retain your personal records on remote backend servers, uninstalling the app or clearing local data performs a complete and irreversible data deletion without requiring developer intervention.
+      </p>
+      <p>
+        If you have questions regarding data deletion, ad tracking settings (AdMob), or privacy requests under applicable privacy laws (such as GDPR or Saudi Arabia's Personal Data Protection Law - PDPL), you may submit an inquiry to our support team:
+      </p>
+
+      <div class="alert alert-warning">
+        <div class="alert-title">📧 Privacy & Deletion Contact Email</div>
+        <strong>Privacy Contact:</strong> <span class="placeholder-email">[SUPPORT_EMAIL_PLACEHOLDER: Please contact developer at support@smartproperty.com]</span><br>
+        <strong>Subject Line:</strong> Privacy / Data Deletion Inquiry — SmartProperty<br>
+        <strong>Response Window:</strong> Requests are processed within 14 business days.
+      </div>
+
+    </article>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h4>Smart Property-Management App</h4>
+        <p>Comprehensive, privacy-focused property management software designed for mobile efficiency.</p>
+      </div>
+      <div>
+        <h5 class="footer-title">Navigation</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="support.html">Support & FAQ</a></li>
+          <li><a href="contact.html">Contact Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="footer-title">Privacy & Legal</h5>
+        <ul class="footer-links">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="data-deletion.html">Data Deletion Request</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SmartProperty App. All rights reserved.</p>
+      <p>App Store Data Deletion Reference</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

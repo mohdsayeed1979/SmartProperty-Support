@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — SmartProperty</title>
+  <meta name="description" content="Official Privacy Policy for Smart Property-Management App. Learn about on-device local storage, permissions, AdMob advertising, and data protection.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="SmartProperty Home">
+        <img src="assets/logo.png" alt="SmartProperty App Logo" class="brand-logo">
+        <span>SmartProperty</span>
+        <span class="brand-tag">App</span>
+      </a>
+
+      <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="privacy-policy.html" class="nav-link active">Privacy Policy</a></li>
+          <li><a href="support.html" class="nav-link">Support & FAQ</a></li>
+          <li><a href="data-deletion.html" class="nav-link">Data Deletion</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <header class="article-header">
+      <h1 class="article-title">Privacy Policy</h1>
+      <p class="article-meta">
+        <strong>Application:</strong> Smart Property-Management App | 
+        <strong>Bundle Identifier:</strong> com.almousa.smartProperty | 
+        <strong>Last Updated:</strong> August 11, 2026
+      </p>
+    </header>
+
+    <article class="article-body">
+      
+      <h2>1. Introduction</h2>
+      <p>
+        SmartProperty ("we", "our", or "us") is committed to respecting and protecting the privacy of our users. This Privacy Policy explains how <strong>Smart Property-Management App</strong> collects, uses, stores, and protects information when you use our mobile application.
+      </p>
+      <p>
+        SmartProperty is designed primarily as a <strong>privacy-first, on-device application</strong>. Your property management records, tenant profiles, payment transactions, expenses, attached documents, and personal logs are stored locally on your device and are not uploaded to remote cloud backend servers.
+      </p>
+
+      <h2>2. Information We Collect & Store Locally</h2>
+      <p>
+        SmartProperty processes information that you voluntarily enter into the application to provide property management services:
+      </p>
+      <ul>
+        <li><strong>Account Information:</strong> Full name, email address, phone number, and password (hashed securely using SHA-256) created during account setup.</li>
+        <li><strong>Property & Unit Details:</strong> Property names, types (building, flat, land), addresses, locations, purchase prices, current market valuations, purchase dates, and photos.</li>
+        <li><strong>Tenant & Lease Information:</strong> Tenant names, email addresses, phone/mobile numbers, assigned unit numbers, rent amounts, security deposits, lease start/end dates, yearly increment percentages, and lease status.</li>
+        <li><strong>Rent & Payment Records:</strong> Payment amounts, dates, payment status (paid, pending, partially paid, overdue), outstanding balances, and payment method details.</li>
+        <li><strong>Expense & Utility Records:</strong> Expense categories, amounts, dates, descriptions, vendor information, and receipt attachments.</li>
+        <li><strong>Documents & Files:</strong> Uploaded or scanned lease agreements, utility receipts, property deeds, tax documents, and identification attachments.</li>
+        <li><strong>Tasks & Reminders:</strong> Custom tasks, due dates, reminder preferences, and notification schedules.</li>
+      </ul>
+
+      <div class="alert alert-info">
+        <div class="alert-title">🔒 100% Local On-Device Database</div>
+        All of the above information is stored locally on your device in an isolated SQLite database file (<code>smart_property.db</code>) and local application storage. We do not host or operate a remote cloud database server for your application records.
+      </div>
+
+      <h2>3. Device Permissions & Purpose</h2>
+      <p>
+        To enable specific functionality, SmartProperty may request access to certain device capabilities. Permissions are requested only when needed:
+      </p>
+      
+      <div class="table-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Permission</th>
+              <th>Platform Key</th>
+              <th>Purpose / Usage in App</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Camera</strong></td>
+              <td><code>NSCameraUsageDescription</code></td>
+              <td>Used to capture photos of properties, scan physical documents, and photograph expense receipts.</td>
+            </tr>
+            <tr>
+              <td><strong>Photo Library / Storage</strong></td>
+              <td><code>NSPhotoLibraryUsageDescription</code><br><code>NSPhotoLibraryAddUsageDescription</code></td>
+              <td>Used to select property and tenant photos, attach documents, and save exported PDF/Excel financial reports to your device.</td>
+            </tr>
+            <tr>
+              <td><strong>Biometrics (Face ID / Touch ID)</strong></td>
+              <td><code>NSFaceIDUsageDescription</code><br><code>USE_BIOMETRIC</code></td>
+              <td>Optional feature used to authenticate you and unlock the app securely using iOS Face ID / Touch ID or Android Biometrics. Biometric authentication is handled by the operating system; no biometric data is accessed or stored by SmartProperty.</td>
+            </tr>
+            <tr>
+              <td><strong>Notifications</strong></td>
+              <td>Local Notifications API</td>
+              <td>Used to schedule local on-device alerts for upcoming rent due dates, tax deadlines, and lease renewals based on your reminder settings.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>4. Biometric & PIN Security</h2>
+      <p>
+        SmartProperty offers optional PIN code and biometric authentication to prevent unauthorized local access to your application:
+      </p>
+      <ul>
+        <li><strong>PIN Code:</strong> If enabled, your chosen PIN code is stored securely in encrypted local preferences.</li>
+        <li><strong>Biometric Authentication:</strong> If enabled, authentication requests are delegated to Apple's LocalAuthentication framework or Android's BiometricPrompt API. SmartProperty never sees, collects, or transmits your fingerprint or facial scan data.</li>
+      </ul>
+
+      <h2>5. Advertising & Third-Party SDKs</h2>
+      <p>
+        SmartProperty integrates <strong>Google Mobile Ads (AdMob)</strong> to display advertisements (banner, interstitial, and native ad units).
+      </p>
+      <p>
+        When ads are served, the Google Mobile Ads SDK may automatically collect and process certain technical information, including:
+      </p>
+      <ul>
+        <li>Device identifiers (such as Advertising ID or IDFA).</li>
+        <li>IP address and coarse location data.</li>
+        <li>App interaction and ad performance metrics.</li>
+      </ul>
+      <p>
+        This data is collected directly by Google in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. You can manage ad personalization settings on your mobile device through your system privacy settings (e.g., iOS Limit Ad Tracking or Android Opt out of Ads Personalization).
+      </p>
+
+      <h2>6. How We Use Information</h2>
+      <p>
+        Your information is used strictly within the application on your device to:
+      </p>
+      <ul>
+        <li>Provide property, tenant, and financial tracking features.</li>
+        <li>Calculate total rent collected, outstanding dues, and net income.</li>
+        <li>Generate printable PDF reports and exportable Excel spreadsheets.</li>
+        <li>Deliver scheduled local notifications for rent and tax reminders.</li>
+        <li>Secure your application data via PIN or biometric lock.</li>
+        <li>Perform database backup and restore operations initiated by you.</li>
+      </ul>
+
+      <h2>7. Data Sharing & Third-Party Transfers</h2>
+      <p>
+        <strong>We do not sell, rent, trade, or transfer your personal or property management data to third parties.</strong>
+      </p>
+      <p>
+        Because your property management database resides locally on your device, we have no technical access to your records. Data is shared only when you explicitly trigger a system sharing action (for example, sharing an exported PDF report or database backup file via email or messaging apps).
+      </p>
+
+      <h2>8. Data Retention & Deletion</h2>
+      <p>
+        Your records remain on your device for as long as you maintain the application installed:
+      </p>
+      <ul>
+        <li><strong>In-App Record Removal:</strong> You can delete individual properties, units, tenants, rent payments, expenses, or documents directly inside the app at any time.</li>
+        <li><strong>Complete Account / App Data Reset:</strong> Clearing the app data in your device settings or uninstalling SmartProperty immediately and permanently deletes 100% of your local database files and attached documents.</li>
+      </ul>
+      <p>
+        For detailed instructions on managing or removing your data, please see our <a href="data-deletion.html">Data Deletion Guide</a>.
+      </p>
+
+      <h2>9. Children's Privacy</h2>
+      <p>
+        SmartProperty is designed for property owners, landlords, and real estate professionals. The application is not directed to children under 13 (or under 16 in certain jurisdictions), and we do not knowingly collect or solicit personal information from children.
+      </p>
+
+      <h2>10. Security Safeguards</h2>
+      <p>
+        We employ industry-standard technical measures to safeguard your information locally:
+      </p>
+      <ul>
+        <li>Account passwords are hashed using SHA-256 prior to local database storage.</li>
+        <li>Database storage is isolated within your device's protected app sandbox.</li>
+        <li>Optional PIN code and Biometric authentication protect against unauthorized physical access to your device.</li>
+      </ul>
+
+      <h2>11. Changes to This Privacy Policy</h2>
+      <p>
+        We may update our Privacy Policy periodically to reflect app updates or legal requirements. Any updates will be posted on this page with a revised "Last Updated" date.
+      </p>
+
+      <h2>12. Contact Us</h2>
+      <p>
+        If you have questions, feedback, or privacy concerns regarding SmartProperty or this Privacy Policy, please contact us:
+      </p>
+      <div class="alert alert-warning">
+        <div class="alert-title">📧 Support Contact</div>
+        <strong>Email:</strong> <span class="placeholder-email">[SUPPORT_EMAIL_PLACEHOLDER: Please contact developer at support@smartproperty.com]</span><br>
+        <strong>GitHub Repository:</strong> <a href="https://github.com/mohdsayeed1979/Property-Manager" target="_blank" rel="noopener">mohdsayeed1979/Property-Manager</a>
+      </div>
+
+    </article>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h4>Smart Property-Management App</h4>
+        <p>Comprehensive, privacy-focused property management software designed for mobile efficiency.</p>
+      </div>
+      <div>
+        <h5 class="footer-title">Navigation</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="support.html">Support & FAQ</a></li>
+          <li><a href="contact.html">Contact Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="footer-title">Privacy & Legal</h5>
+        <ul class="footer-links">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="data-deletion.html">Data Deletion Request</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SmartProperty App. All rights reserved.</p>
+      <p>App Store Privacy Policy Reference</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
